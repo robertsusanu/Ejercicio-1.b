@@ -1,7 +1,7 @@
 public class TestBook {
     public static void main(String[] args) {
         // Construct an author instance
-        Author ahTeck = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm');
+      /*Author ahTeck = new Author("Tan Ah Teck", "ahteck@nowhere.com", 'm');
         System.out.println(ahTeck); // Author's toString()
         Book dummyBook = new Book("Java for dummy", ahTeck, 19.95, 99); // Test Book's Constructor
         System.out.println(dummyBook); // Test Book's toString()
@@ -19,6 +19,13 @@ public class TestBook {
                 new Author("Paul Tan", "paul@somewhere.com", 'm'), 29.95);
         System.out.println(anotherBook); // toString()
         System.out.println(anotherBook.getAuthor().getName());
-        System.out.println(anotherBook.getAuthor().getEmail());
+        System.out.println(anotherBook.getAuthor().getEmail());*/
+        // Declare and allocate an array of Authors
+        Author[] authors = new Author[2];
+        authors[0] = new Author("Tan Ah Teck", "AhTeck@somewhere.com", 'm');
+        authors[1] = new Author("Paul Tan", "Paul@nowhere.com", 'm');
+// Declare and allocate a Book instance
+        Book javaDummy = new Book("Java for Dummy", authors, 19.99, 99);
+        System.out.println(javaDummy); // toString()
     }
 }
